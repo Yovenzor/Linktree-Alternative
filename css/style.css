@@ -1,0 +1,800 @@
+#main,
+    body,
+    html {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box
+    }
+
+    body,
+    button,
+    input,
+    select,
+    textarea {
+        font-family: "Inter", sans-serif;
+        font-size: 12px
+    }
+
+    :root {
+        -webkit-font-smoothing: antialiased
+    }
+
+    * {
+        box-sizing: border-box;
+        -webkit-font-smoothing: inherit
+    }
+
+    figure,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+        margin: 0
+    }
+
+    body {
+        background: #fff
+    }
+
+    @font-face {
+        src: url(https://fonts.gstatic.com/s/bevietnampro/v8/QdVMSTAyLFyeg_IDWvOJmVES_HSQI18yT7wrcwap.ttf);
+        font-family: "Be Vietnam Pro";
+        font-style: normal;
+        font-weight: 800
+    }
+
+    @font-face {
+        src: url(https://fonts.gstatic.com/s/bevietnampro/v8/QdVPSTAyLFyeg_IDWvOJmVES_EwwD3s6ZKAi.ttf);
+        font-family: "Be Vietnam Pro";
+        font-style: normal;
+        font-weight: 400
+    }
+
+    @font-face {
+        font-display: block;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 100;
+        src: url(https://app.framerstatic.com/Inter-Thin-IUOMN4HW.woff2?v=3.13)format("woff2"), url(https://app.framerstatic.com/Inter-Thin-MUM7DYQ7.woff?v=3.13)format("woff")
+    }
+
+    @font-face {
+        font-display: block;
+        font-family: Inter;
+        font-style: italic;
+        font-weight: 100;
+        src: url(https://app.framerstatic.com/Inter-ThinItalic-AB5RI7ZJ.woff2?v=3.13)format("woff2"), url(https://app.framerstatic.com/Inter-ThinItalic-EJHZVFCH.woff?v=3.13)format("woff")
+    }
+
+    @font-face {
+        font-display: block;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 200;
+        src: url(https://app.framerstatic.com/Inter-ExtraLight-7GWURIUN.woff2?v=3.13)format("woff2"), url(https://app.framerstatic.com/Inter-ExtraLight-NWAWMDRT.woff?v=3.13)format("woff")
+    }
+
+    @font-face {
+        font-display: block;
+        font-family: Inter;
+        font-style: italic;
+        font-weight: 200;
+        src: url(https://app.framerstatic.com/Inter-ExtraLightItalic-PQZLPTJA.woff2?v=3.13)format("woff2"), url(https://app.framerstatic.com/Inter-ExtraLightItalic-FWBUQSHN.woff?v=3.13)format("woff")
+    }
+
+    @font-face {
+        font-display: block;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 300;
+        src: url(https://app.framerstatic.com/Inter-Light-A2X6COZL.woff2?v=3.13)format("woff2"), url(https://app.framerstatic.com/Inter-Light-MLEWPO6W.woff?v=3.13)format("woff")
+    }
+
+    @font-face {
+        font-display: block;
+        font-family: Inter;
+        font-style: italic;
+        font-weight: 300;
+        src: url(https://app.framerstatic.com/Inter-LightItalic-H2HTNPOD.woff2?v=3.13)format("woff2"), url(https://app.framerstatic.com/Inter-LightItalic-6WN2CQOT.woff?v=3.13)format("woff")
+    }
+
+    @font-face {
+        font-display: block;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 400;
+        src: url(https://app.framerstatic.com/Inter-Regular-U5F6TEU7.woff2?v=3.13)format("woff2"), url(https://app.framerstatic.com/Inter-Regular-CJMPZWTZ.woff?v=3.13)format("woff")
+    }
+
+    @font-face {
+        font-display: block;
+        font-family: Inter;
+        font-style: italic;
+        font-weight: 400;
+        src: url(https://app.framerstatic.com/Inter-Italic-RQ2W3YOO.woff2?v=3.13)format("woff2"), url(https://app.framerstatic.com/Inter-Italic-PXIDFCKV.woff?v=3.13)format("woff")
+    }
+
+    @font-face {
+        font-display: block;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 500;
+        src: url(https://app.framerstatic.com/Inter-Medium-RNI73PYA.woff2?v=3.13)format("woff2"), url(https://app.framerstatic.com/Inter-Medium-R35QKO2F.woff?v=3.13)format("woff")
+    }
+
+    @font-face {
+        font-display: block;
+        font-family: Inter;
+        font-style: italic;
+        font-weight: 500;
+        src: url(https://app.framerstatic.com/Inter-MediumItalic-EXQWR2LS.woff2?v=3.13)format("woff2"), url(https://app.framerstatic.com/Inter-MediumItalic-AVX2526N.woff?v=3.13)format("woff")
+    }
+
+    @font-face {
+        font-display: block;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 600;
+        src: url(https://app.framerstatic.com/Inter-SemiBold-7ZIMHKJU.woff2?v=3.13)format("woff2"), url(https://app.framerstatic.com/Inter-SemiBold-7BWDFOQP.woff?v=3.13)format("woff")
+    }
+
+    @font-face {
+        font-display: block;
+        font-family: Inter;
+        font-style: italic;
+        font-weight: 600;
+        src: url(https://app.framerstatic.com/Inter-SemiBoldItalic-HTKDDYVI.woff2?v=3.13)format("woff2"), url(https://app.framerstatic.com/Inter-SemiBoldItalic-B4AHTHZ7.woff?v=3.13)format("woff")
+    }
+
+    @font-face {
+        font-display: block;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 700;
+        src: url(https://app.framerstatic.com/Inter-Bold-FINJV4KU.woff2?v=3.13)format("woff2"), url(https://app.framerstatic.com/Inter-Bold-ZN4TVV5P.woff?v=3.13)format("woff")
+    }
+
+    @font-face {
+        font-display: block;
+        font-family: Inter;
+        font-style: italic;
+        font-weight: 700;
+        src: url(https://app.framerstatic.com/Inter-BoldItalic-O52UQICD.woff2?v=3.13)format("woff2"), url(https://app.framerstatic.com/Inter-BoldItalic-CV5SJ4GZ.woff?v=3.13)format("woff")
+    }
+
+    @font-face {
+        font-display: block;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 800;
+        src: url(https://app.framerstatic.com/Inter-ExtraBold-6VXKNDPB.woff2?v=3.13)format("woff2"), url(https://app.framerstatic.com/Inter-ExtraBold-D6P5HPRZ.woff?v=3.13)format("woff")
+    }
+
+    @font-face {
+        font-display: block;
+        font-family: Inter;
+        font-style: italic;
+        font-weight: 800;
+        src: url(https://app.framerstatic.com/Inter-ExtraBoldItalic-3ILV4YNS.woff2?v=3.13)format("woff2"), url(https://app.framerstatic.com/Inter-ExtraBoldItalic-QSPC7RBG.woff?v=3.13)format("woff")
+    }
+
+    @font-face {
+        font-display: block;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 900;
+        src: url(https://app.framerstatic.com/Inter-Black-PCIUJ5K5.woff2?v=3.13)format("woff2"), url(https://app.framerstatic.com/Inter-Black-GF2EZZQM.woff?v=3.13)format("woff")
+    }
+
+    @font-face {
+        font-display: block;
+        font-family: Inter;
+        font-style: italic;
+        font-weight: 900;
+        src: url(https://app.framerstatic.com/Inter-BlackItalic-S7JBKCTE.woff2?v=3.13)format("woff2"), url(https://app.framerstatic.com/Inter-BlackItalic-X3SGNBCK.woff?v=3.13)format("woff")
+    }
+
+    @font-face {
+        font-display: block;
+        font-family: Inter var;
+        font-named-instance: "Regular";
+        font-style: normal;
+        font-weight: 100 900;
+        src: url(https://app.framerstatic.com/Inter-roman.var-DWNGCZOL.woff2?v=3.13)format("woff2")
+    }
+
+    @font-face {
+        font-display: block;
+        font-family: Inter var;
+        font-named-instance: "Italic";
+        font-style: italic;
+        font-weight: 100 900;
+        src: url(https://app.framerstatic.com/Inter-italic.var-FQSUHL4T.woff2?v=3.13)format("woff2")
+    }
+
+    @font-face {
+        font-display: block;
+        font-family: Inter var experimental;
+        font-style: oblique 0deg 10deg;
+        font-weight: 100 900;
+        src: url(https://app.framerstatic.com/Inter.var-RPLHSTPV.woff2?v=3.13)format("woff2")
+    }
+
+    [data-framer-component-type] {
+        position: absolute
+    }
+
+    [data-framer-component-type=Text] {
+        cursor: inherit
+    }
+
+    [data-framer-component-text-autosized] * {
+        white-space: pre
+    }
+
+    [data-framer-component-type=Text]>* {
+        text-align: var(--framer-text-alignment, start)
+    }
+
+    .svgContainer svg,
+    [data-framer-component-type=Text] h1 span,
+    [data-framer-component-type=Text] h2 span,
+    [data-framer-component-type=Text] h3 span,
+    [data-framer-component-type=Text] h4 span,
+    [data-framer-component-type=Text] h5 span,
+    [data-framer-component-type=Text] h6 span,
+    [data-framer-component-type=Text] p span,
+    [data-framer-component-type=Text] span span {
+        display: block
+    }
+
+    [data-framer-component-type=Text] h1 span span,
+    [data-framer-component-type=Text] h2 span span,
+    [data-framer-component-type=Text] h3 span span,
+    [data-framer-component-type=Text] h4 span span,
+    [data-framer-component-type=Text] h5 span span,
+    [data-framer-component-type=Text] h6 span span,
+    [data-framer-component-type=Text] p span span,
+    [data-framer-component-type=Text] span span span {
+        display: unset
+    }
+
+    [data-framer-component-type=Text] a,
+    [data-framer-component-type=Text] a div span,
+    [data-framer-component-type=Text] div div span,
+    [data-framer-component-type=Text] h1 span span,
+    [data-framer-component-type=Text] h2 span span,
+    [data-framer-component-type=Text] h3 span span,
+    [data-framer-component-type=Text] h4 span span,
+    [data-framer-component-type=Text] h5 span span,
+    [data-framer-component-type=Text] h6 span span,
+    [data-framer-component-type=Text] p span span,
+    [data-framer-component-type=Text] span span span {
+        font-family: var(--font-family);
+        font-style: var(--font-style);
+        font-weight: min(calc(var(--framer-font-weight-increase, 0) + var(--font-weight, 400)), 900);
+        color: var(--text-color);
+        letter-spacing: var(--letter-spacing);
+        font-size: var(--font-size);
+        text-transform: var(--text-transform);
+        text-decoration: var(--text-decoration);
+        line-height: var(--line-height);
+        --font-family: var(--framer-font-family);
+        --font-style: var(--framer-font-style);
+        --font-weight: var(--framer-font-weight);
+        --text-color: var(--framer-text-color);
+        --letter-spacing: var(--framer-letter-spacing);
+        --font-size: var(--framer-font-size);
+        --text-transform: var(--framer-text-transform);
+        --text-decoration: var(--framer-text-decoration);
+        --line-height: var(--framer-line-height)
+    }
+
+    [data-framer-component-type=Text] a,
+    [data-framer-component-type=Text] a div span,
+    [data-framer-component-type=Text] a h1 span span,
+    [data-framer-component-type=Text] a h2 span span,
+    [data-framer-component-type=Text] a h3 span span,
+    [data-framer-component-type=Text] a h4 span span,
+    [data-framer-component-type=Text] a h5 span span,
+    [data-framer-component-type=Text] a h6 span span,
+    [data-framer-component-type=Text] a p span span,
+    [data-framer-component-type=Text] a span span span {
+        --font-family: var(--framer-link-font-family, var(--framer-font-family));
+        --font-style: var(--framer-link-font-style, var(--framer-font-style));
+        --font-weight: var(--framer-link-font-weight, var(--framer-font-weight));
+        --text-color: var(--framer-link-text-color, var(--framer-text-color));
+        --font-size: var(--framer-link-font-size, var(--framer-font-size));
+        --text-transform: var(--framer-link-text-transform, var(--framer-text-transform));
+        --text-decoration: var(--framer-link-text-decoration, var(--framer-text-decoration))
+    }
+
+    [data-framer-component-type=Text] a div span:hover,
+    [data-framer-component-type=Text] a h1 span span:hover,
+    [data-framer-component-type=Text] a h2 span span:hover,
+    [data-framer-component-type=Text] a h3 span span:hover,
+    [data-framer-component-type=Text] a h4 span span:hover,
+    [data-framer-component-type=Text] a h5 span span:hover,
+    [data-framer-component-type=Text] a h6 span span:hover,
+    [data-framer-component-type=Text] a p span span:hover,
+    [data-framer-component-type=Text] a span span span:hover,
+    [data-framer-component-type=Text] a:hover {
+        --font-family: var(--framer-link-hover-font-family, var(--framer-link-font-family, var(--framer-font-family)));
+        --font-style: var(--framer-link-hover-font-style, var(--framer-link-font-style, var(--framer-font-style)));
+        --font-weight: var(--framer-link-hover-font-weight, var(--framer-link-font-weight, var(--framer-font-weight)));
+        --text-color: var(--framer-link-hover-text-color, var(--framer-link-text-color, var(--framer-text-color)));
+        --font-size: var(--framer-link-hover-font-size, var(--framer-link-font-size, var(--framer-font-size)));
+        --text-transform: var(--framer-link-hover-text-transform, var(--framer-link-text-transform, var(--framer-text-transform)));
+        --text-decoration: var(--framer-link-hover-text-decoration, var(--framer-link-text-decoration, var(--framer-text-decoration)))
+    }
+
+    [data-framer-component-type=Text].isCurrent a,
+    [data-framer-component-type=Text].isCurrent a div span,
+    [data-framer-component-type=Text].isCurrent a h1 span span,
+    [data-framer-component-type=Text].isCurrent a h2 span span,
+    [data-framer-component-type=Text].isCurrent a h3 span span,
+    [data-framer-component-type=Text].isCurrent a h4 span span,
+    [data-framer-component-type=Text].isCurrent a h5 span span,
+    [data-framer-component-type=Text].isCurrent a h6 span span,
+    [data-framer-component-type=Text].isCurrent a p span span,
+    [data-framer-component-type=Text].isCurrent a span span span {
+        --font-family: var(--framer-link-current-font-family, var(--framer-link-font-family, var(--framer-font-family)));
+        --font-style: var(--framer-link-current-font-style, var(--framer-link-font-style, var(--framer-font-style)));
+        --font-weight: var(--framer-link-current-font-weight, var(--framer-link-font-weight, var(--framer-font-weight)));
+        --text-color: var(--framer-link-current-text-color, var(--framer-link-text-color, var(--framer-text-color)));
+        --font-size: var(--framer-link-current-font-size, var(--framer-link-font-size, var(--framer-font-size)));
+        --text-transform: var(--framer-link-current-text-transform, var(--framer-link-text-transform, var(--framer-text-transform)));
+        --text-decoration: var(--framer-link-current-text-decoration, var(--framer-link-text-decoration, var(--framer-text-decoration)))
+    }
+
+    [data-framer-component-type=RichText] {
+        cursor: inherit
+    }
+
+    [data-framer-component-type=RichText] div,
+    [data-framer-component-type=RichText] h1,
+    [data-framer-component-type=RichText] h2,
+    [data-framer-component-type=RichText] h3,
+    [data-framer-component-type=RichText] h4,
+    [data-framer-component-type=RichText] h5,
+    [data-framer-component-type=RichText] h6,
+    [data-framer-component-type=RichText] p,
+    [data-framer-component-type=RichText] span {
+        font-family: var(--framer-font-family, Inter, sans-serif);
+        font-style: var(--framer-font-style, normal);
+        font-weight: var(--framer-font-weight, 400);
+        color: var(--framer-text-color, #000);
+        font-size: var(--framer-font-size, 16px);
+        letter-spacing: var(--framer-letter-spacing, 0);
+        text-transform: var(--framer-text-transform, none);
+        text-decoration: var(--framer-text-decoration, none);
+        line-height: var(--framer-line-height, 1.2em);
+        text-align: var(--framer-text-alignment, start)
+    }
+
+    [data-framer-component-type=RichText] a,
+    [data-framer-component-type=RichText] a span {
+        font-family: var(--framer-link-font-family, var(--framer-font-family, Inter, sans-serif));
+        font-style: var(--framer-link-font-style, var(--framer-font-style, normal));
+        font-weight: var(--framer-link-font-weight, var(--framer-font-weight, 400));
+        color: var(--framer-link-text-color, var(--framer-text-color, #000));
+        font-size: var(--framer-link-font-size, var(--framer-font-size, 16px));
+        text-transform: var(--framer-link-text-transform, var(--framer-text-transform, none));
+        text-decoration: var(--framer-link-text-decoration, var(--framer-text-decoration, none))
+    }
+
+    [data-framer-component-type=RichText] a:hover,
+    [data-framer-component-type=RichText] a:hover span {
+        font-family: var(--framer-link-hover-font-family, var(--framer-link-font-family, var(--framer-font-family, Inter, sans-serif)));
+        font-style: var(--framer-link-hover-font-style, var(--framer-link-font-style, var(--framer-font-style, normal)));
+        font-weight: var(--framer-link-hover-font-weight, var(--framer-link-font-weight, var(--framer-font-weight, 400)));
+        color: var(--framer-link-hover-text-color, var(--framer-link-text-color, var(--framer-text-color, #000)));
+        font-size: var(--framer-link-hover-font-size, var(--framer-link-font-size, var(--framer-font-size, 16px)));
+        text-transform: var(--framer-link-hover-text-transform, var(--framer-link-text-transform, var(--framer-text-transform, none)));
+        text-decoration: var(--framer-link-hover-text-decoration, var(--framer-link-text-decoration, var(--framer-text-decoration, none)))
+    }
+
+    [data-framer-component-type=RichText].current a,
+    [data-framer-component-type=RichText].current a span {
+        font-family: var(--framer-link-current-font-family, var(--framer-link-font-family, var(--framer-font-family, Inter, sans-serif)));
+        font-style: var(--framer-link-current-font-style, var(--framer-link-font-style, var(--framer-font-style, normal)));
+        font-weight: var(--framer-link-current-font-weight, var(--framer-link-font-weight, var(--framer-font-weight, 400)));
+        color: var(--framer-link-current-text-color, var(--framer-link-text-color, var(--framer-text-color, #000)));
+        font-size: var(--framer-link-current-font-size, var(--framer-link-font-size, var(--framer-font-size, 16px)));
+        text-transform: var(--framer-link-current-text-transform, var(--framer-link-text-transform, var(--framer-text-transform, none)));
+        text-decoration: var(--framer-link-current-text-decoration, var(--framer-link-text-decoration, var(--framer-text-decoration, none)))
+    }
+
+    [data-framer-component-type=RichText] strong {
+        font-weight: bolder
+    }
+
+    [data-framer-component-type=RichText] em {
+        font-style: italic
+    }
+
+    [data-framer-component-type=RichText] div,
+    [data-framer-component-type=RichText] h1,
+    [data-framer-component-type=RichText] h2,
+    [data-framer-component-type=RichText] h3,
+    [data-framer-component-type=RichText] h4,
+    [data-framer-component-type=RichText] h5,
+    [data-framer-component-type=RichText] h6,
+    [data-framer-component-type=RichText] p {
+        margin: 0;
+        padding: 0
+    }
+
+    :not([data-framer-generated])>[data-framer-stack-content-wrapper]>*,
+    :not([data-framer-generated])>[data-framer-stack-content-wrapper]>[data-framer-component-type],
+    :not([data-framer-generated])>[data-framer-stack-content-wrapper]>[data-framer-stack-gap]>*,
+    :not([data-framer-generated])>[data-framer-stack-content-wrapper]>[data-framer-stack-gap]>[data-framer-component-type] {
+        position: relative
+    }
+
+    .flexbox-gap-not-supported [data-framer-stack-gap]>*,
+    [data-framer-stack-gap][data-framer-stack-flexbox-gap=false] {
+        margin: calc(var(--stack-gap-y)/2) calc(var(--stack-gap-x)/2)
+    }
+
+    [data-framer-stack-content-wrapper][data-framer-stack-gap-enabled=true] {
+        gap: var(--stack-native-gap)
+    }
+
+    .flexbox-gap-not-supported [data-framer-stack-content-wrapper][data-framer-stack-gap-enabled=true] {
+        gap: unset
+    }
+
+    .flexbox-gap-not-supported [data-framer-stack-direction-reverse=false] [data-framer-stack-gap]>:first-child,
+    .flexbox-gap-not-supported [data-framer-stack-direction-reverse=true] [data-framer-stack-gap]>:last-child,
+    [data-framer-stack-direction-reverse=false] [data-framer-stack-gap][data-framer-stack-flexbox-gap=false]>:first-child,
+    [data-framer-stack-direction-reverse=true] [data-framer-stack-gap][data-framer-stack-flexbox-gap=false]>:last-child {
+        margin-top: 0;
+        margin-left: 0
+    }
+
+    .flexbox-gap-not-supported [data-framer-stack-direction-reverse=false] [data-framer-stack-gap]>:last-child,
+    .flexbox-gap-not-supported [data-framer-stack-direction-reverse=true] [data-framer-stack-gap]>:first-child,
+    [data-framer-stack-direction-reverse=false] [data-framer-stack-gap][data-framer-stack-flexbox-gap=false]>:last-child,
+    [data-framer-stack-direction-reverse=true] [data-framer-stack-gap][data-framer-stack-flexbox-gap=false]>:first-child {
+        margin-right: 0;
+        margin-bottom: 0
+    }
+
+    NavigationContainer [data-framer-component-type=NavigationContainer]>*,
+    [data-framer-component-type=NavigationContainer]>[data-framer-component-type],
+    [data-framer-component-type=ScrollContentWrapper]>* {
+        position: relative
+    }
+
+    [data-framer-component-type=NativeScroll].scrollbar-hidden::-webkit-scrollbar,
+    [data-framer-component-type=Scroll]::-webkit-scrollbar {
+        display: none
+    }
+
+    [data-framer-component-type=NativeScroll] {
+        -webkit-overflow-scrolling: touch
+    }
+
+    [data-framer-component-type=NativeScroll]>* {
+        position: relative
+    }
+
+    [data-framer-component-type=NativeScroll].direction-both {
+        overflow-x: scroll;
+        overflow-y: scroll
+    }
+
+    [data-framer-component-type=NativeScroll].direction-vertical {
+        overflow-x: hidden;
+        overflow-y: scroll
+    }
+
+    [data-framer-component-type=NativeScroll].direction-horizontal {
+        overflow-x: scroll;
+        overflow-y: hidden
+    }
+
+    [data-framer-component-type=NativeScroll].direction-vertical>* {
+        width: 100% !important
+    }
+
+    [data-framer-component-type=NativeScroll].direction-horizontal>* {
+        height: 100% !important
+    }
+
+    [data-framer-component-type=PageContentWrapper]>*,
+    [data-framer-component-type=PageContentWrapper]>[data-framer-component-type] {
+        position: relative
+    }
+
+    [data-is-present=false],
+    [data-is-present=false] * {
+        pointer-events: none !important
+    }
+
+    .framer-XaaPJ.framer-v-11hl9k0 .framer-1wltz0o,
+    .framer-XaaPJ.framer-v-1464nan .framer-1wltz0o,
+    .framer-XaaPJ.framer-v-1wltz0o .framer-1wltz0o,
+    .framer-XaaPJ.framer-v-fvvg58 .framer-1wltz0o,
+    [data-framer-cursor=pointer] {
+        cursor: pointer
+    }
+
+    [data-framer-cursor=grab] {
+        cursor: grab
+    }
+
+    [data-framer-cursor=grab]:active {
+        cursor: grabbing
+    }
+
+    [data-framer-component-type=Frame] *,
+    [data-framer-component-type=Stack] * {
+        pointer-events: auto
+    }
+
+    [data-framer-generated] * {
+        pointer-events: unset
+    }
+
+    [data-reset=button] {
+        border-width: 0;
+        padding: 0
+    }
+
+    .framer-XaaPJ [data-border=true]::after,
+    .framer-fof3z [data-border=true]::after {
+        content: "";
+        border-width: var(--border-top-width, 0) var(--border-right-width, 0) var(--border-bottom-width, 0) var(--border-left-width, 0);
+        border-color: var(--border-color, none);
+        border-style: var(--border-style, none);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        box-sizing: border-box;
+        left: 0;
+        top: 0;
+        border-radius: inherit;
+        pointer-events: none
+    }
+
+    @supports (aspect-ratio:1) {
+        body {
+        --framer-aspect-ratio-supported: auto
+        }
+    }
+
+    .framer-fof3z .framer-1gxtarv {
+        position: relative;
+        overflow: hidden;
+        width: 1232px;
+        height: 831px;
+        background: radial-gradient(91.4% 63.4%at 50%0, #00f6ff 0, #0cf 100%)
+    }
+
+    .framer-fof3z .framer-x43dho {
+        position: relative;
+        overflow: hidden;
+        max-width: 430px;
+        max-height: 700px;
+        width: 1px;
+        height: min-content;
+        flex: 1 0 0px;
+        border-bottom-left-radius: 18px;
+        border-bottom-right-radius: 18px;
+        border-top-right-radius: 18px;
+        border-top-left-radius: 18px;
+        box-shadow: 0 100px 140px -50px rgba(0, 0, 0, .4), 0 2px 174px 0 rgba(0, 0, 0, .1);
+        background-color: #fff
+    }
+
+    .framer-fof3z .framer-1ivecxj {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: var(--framer-aspect-ratio-supported, 328px);
+        flex: none;
+        aspect-ratio: 1.3271604938271604/1
+    }
+
+    .framer-fof3z .framer-3tgoar {
+        background-color: rgba(255, 255, 255, .1)
+    }
+
+    .framer-fof3z .framer-3tgoar,
+    .framer-fof3z .framer-tfkn0e {
+        position: relative;
+        overflow: visible;
+        width: 100%;
+        height: min-content;
+        flex: none
+    }
+
+    .framer-fof3z .framer-jicvg7,
+    .framer-fof3z .framer-yyb0w0 {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+        flex: none;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        word-break: break-word;
+        --framer-font-family: "Be Vietnam Pro", serif;
+        --framer-font-style: normal;
+        --framer-text-transform: none;
+        --framer-text-decoration: none;
+        --framer-text-alignment: start;
+        --framer-link-text-decoration: underline
+    }
+
+    .framer-fof3z .framer-yyb0w0 {
+        --framer-font-weight: 800;
+        --framer-text-color: #000000;
+        --framer-font-size: 31px;
+        --framer-letter-spacing: -1px;
+        --framer-line-height: 1.2em
+    }
+
+    .framer-fof3z .framer-jicvg7 {
+        --framer-font-weight: 400;
+        --framer-text-color: #222222;
+        --framer-font-size: 16px;
+        --framer-letter-spacing: 0px;
+        --framer-line-height: 1.6em
+    }
+
+    .framer-fof3z .framer-h4pucr {
+        position: relative;
+        overflow: visible;
+        width: 100%;
+        height: 40px;
+        flex: none
+    }
+
+    .framer-fof3z .framer-1ecvrgk-container,
+    .framer-fof3z .framer-1uttywr-container,
+    .framer-fof3z .framer-d26fgy-container,
+    .framer-fof3z .framer-mo2mir-container {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        flex: none
+    }
+
+    @media (min-width:1232px) {
+        .framer-fof3z .hidden-1gxtarv {
+        display: none !important
+        }
+    }
+
+    @media (max-width:429px) {
+        .framer-fof3z .hidden-x8mr2i {
+        display: none !important
+        }
+
+        .framer-fof3z .framer-1gxtarv {
+        width: 429px;
+        height: 637px;
+        background-color: #fff
+        }
+
+        .framer-fof3z .framer-1ivecxj,
+        .framer-fof3z .framer-x43dho {
+        right: auto;
+        bottom: auto;
+        left: auto;
+        top: auto;
+        flex: 1 0 0px;
+        aspect-ratio: unset
+        }
+
+        .framer-fof3z .framer-x43dho {
+        width: 1px;
+        height: 100%;
+        max-width: 430px;
+        min-width: unset;
+        max-height: unset;
+        min-height: unset;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0
+        }
+
+        .framer-fof3z .framer-1ivecxj {
+        width: 100%;
+        height: 1px
+        }
+    }
+
+    @media (min-width:430px) and (max-width:1231px) {
+        .framer-fof3z .hidden-1b9ma67 {
+        display: none !important
+        }
+
+        .framer-fof3z .framer-1gxtarv {
+        width: 430px;
+        height: 714px
+        }
+    }
+
+    .ssr-variant {
+        display: contents
+    }
+
+    @supports (aspect-ratio:1) {
+        body {
+        --framer-aspect-ratio-supported: auto
+        }
+    }
+
+    .framer-XaaPJ * {
+        box-sizing: border-box
+    }
+
+    @supports (aspect-ratio:1) {
+        body {
+        --framer-aspect-ratio-supported: auto
+        }
+    }
+
+    @supports (aspect-ratio:1) {
+        body {
+        --framer-aspect-ratio-supported: auto
+        }
+    }
+
+    @supports (aspect-ratio:1) {
+        body {
+        --framer-aspect-ratio-supported: auto
+        }
+    }
+
+    @supports (aspect-ratio:1) {
+        body {
+        --framer-aspect-ratio-supported: auto
+        }
+    }
+
+    @supports (aspect-ratio:1) {
+        body {
+        --framer-aspect-ratio-supported: auto
+        }
+    }
+
+    @supports (aspect-ratio:1) {
+        body {
+        --framer-aspect-ratio-supported: auto
+        }
+    }
+
+    @supports (aspect-ratio:1) {
+        body {
+        --framer-aspect-ratio-supported: auto
+        }
+    }
+
+    .framer-XaaPJ .framer-1wltz0o {
+        position: relative;
+        cursor: pointer;
+        overflow: visible;
+        width: 40px;
+        height: 40px
+    }
+
+    .framer-XaaPJ .framer-1utb7k7,
+    .framer-XaaPJ .framer-5pctki,
+    .framer-XaaPJ .framer-n5erp9,
+    .framer-XaaPJ .framer-xyxe8n {
+        position: relative;
+        cursor: pointer;
+        width: 24px;
+        height: 24px;
+        flex: none
+    }
